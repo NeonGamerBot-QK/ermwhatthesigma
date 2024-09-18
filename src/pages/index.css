@@ -1,0 +1,58 @@
+html,
+body {
+    animation: bg 5s infinite;
+    transition-duration: 1000ms;
+    color: white;
+    transition-timing-function: ease-in-out;
+}
+
+main {
+    backdrop-filter: blur(1000px);
+    width: 100%;
+    min-height: 100vh;
+    display: flexbox;
+    direction: rtl;
+}
+body {
+    padding: 2rem;
+}
+@keyframes bg {
+    0% {
+ background: linear-gradient(red, blue);
+    }
+    10% {
+ background: linear-gradient(blue, red);
+    }
+    20% {
+        background: linear-gradient(blue, purple);
+    }
+    30% {
+        background: linear-gradient(purple, pink);
+    }
+    40% {
+        background: linear-gradient( pink, green);
+    }
+    50% {
+        background: linear-gradient( green, magenta);
+    }
+    60% {
+        background: linear-gradient( magenta, lime);
+    }
+    70% {
+        background: linear-gradient( lime, teal);
+    }
+    80% {
+        background: linear-gradient( teal, yellow);
+    }
+    90% {
+        background: linear-gradient(yellow, black);
+    }
+    100% {
+        background: linear-gradient(black, red);
+    }
+}
+.container {
+    max-height: fit-content;
+    max-width: fit-content;
+    border: 3px saddlebrown solid;
+}
