@@ -15,5 +15,5 @@ jobs:
           password: ${{ secrets.SSH_PASS }}
           port: ${{ secrets.WEB_PORT }}
           script: |
-            cd /root
+            cd /root 
             bash ./deploy_project_ext.sh ${{ github.event.repository.name }} /home/ermwhatthesigma.me/public_html "npm install" "npm run build"
